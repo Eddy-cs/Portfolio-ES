@@ -1,0 +1,41 @@
+@import "variables";
+
+.hero{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 100vw;
+    margin-top: 0rem;
+
+    &__black{
+        z-index: -2;
+        background-color: $dark-gray;
+        position: relative;
+        padding: 0 15%;
+
+        &--decoration {
+            position: absolute;
+            right: 0;
+            width: 4rem;
+            height: 22rem;
+            border-radius: 0 0 0 6rem;
+            background-color: $bone-white;
+        }
+    }
+
+    h1{
+        margin-top: 14rem;
+        color: $bone-white
+    }
+
+    h2{
+    color: $mid-gray;
+    }
+
+    p{
+        margin-top: 5rem;
+        color: $light-gray
+    }
+
+
+
+}

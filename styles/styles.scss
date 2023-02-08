@@ -1,0 +1,36 @@
+@import "hero";
+@import "navbar";
+@import "variables";
+@import "content";
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+  }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: $bone-white;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 1.5rem;
+}

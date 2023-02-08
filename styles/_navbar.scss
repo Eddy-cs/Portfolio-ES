@@ -1,0 +1,38 @@
+@import "variables";
+
+.navbar{
+    position: absolute;
+    padding: 2.5% 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 4rem;
+    width: 100%;
+
+    &__logo{
+        display: flex;
+        gap: 1rem;
+        &--image { width: 3.5rem;
+            height: 3.5rem;
+            background-color: $bone-white;
+            border-radius: 50%;
+        }
+    }
+
+
+    h3 {
+        color: $bone-white;
+        place-self: center;
+        padding-left: 0;
+    }
+
+    &__btn{
+        justify-self: end;
+        background-color: $dark-gray;
+        color: $bone-white;
+        border-radius: 2rem;
+        min-width: 12rem;
+        border: none;
+        cursor: pointer;
+    }
+}
+
