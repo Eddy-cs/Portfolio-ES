@@ -1,33 +1,32 @@
 @import "variables";
 
-.content{
-    background-color: $dark-gray;
-    padding-top: 5rem;
+.content {
+  background-color: $dark-gray;
+  padding-top: 5rem;
 
-    &__main{
+  &__main {
     display: grid;
     gap: 3rem;
     grid-template-columns: 2fr 3.2fr 3.2fr;
     padding: 1% 6% 5%;
+  }
+
+  &__card {
+    height: 40rem;
+    border-radius: 3rem;
+    border: 2px solid rgb(104, 104, 104);
+  }
+
+  &__info {
+    background-color: $bone-white;
+    border-radius: 3rem;
+    height: 100%;
+    width: 100%;
+    transform: translate(5%, -5%);
+
+    &:hover {
+      transform: translate(0%, 0%);
+      transition: all 0.5s;
     }
-
-    &__card{
-            height: 40rem;
-            border-radius: 3rem;
-            border: 2px solid rgb(104, 104, 104);
-        }
-        
-        &__info{
-            background-color: $bone-white;
-            border-radius: 3rem;
-            height: 100%;
-            width: 100%;
-            transform: translate(5%, -5%);
-
-            &:hover{ 
-                transform: translate(0%, 0%);
-                transition: all 0.5s;
-            }
-        }
-        
+  }
 }
