@@ -138,6 +138,9 @@
   border: none;
   cursor: pointer;
 }
+.navbar__btn:hover {
+  background-color: #4a4d53;
+}
 
 .content {
   background-color: #1a1b1d;
