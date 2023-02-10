@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
   height: 80rem;
-  margin-top: 0rem;
 }
 .hero h1 {
   margin-top: 14rem;
@@ -16,7 +15,6 @@
   color: #7e8082;
 }
 .hero__black {
-  z-index: -2;
   background-color: #1a1b1d;
   position: relative;
   padding: 0 15%;
@@ -51,6 +49,26 @@
 }
 .hero__white--pc {
   animation: 800ms pageLoad--up ease-in;
+}
+.hero__social {
+  margin-top: 4rem;
+  list-style-type: none;
+  display: flex;
+  grid-auto-flow: column;
+  font-size: 3rem;
+  place-items: start;
+  gap: 2rem;
+}
+.hero__social li {
+  background-color: #5b5c5e;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  text-align: center;
+  color: #1a1b1d;
+}
+.hero__social li:hover {
+  color: #323438;
 }
 
 @keyframes pageLoad--right {
@@ -94,6 +112,7 @@
   grid-template-columns: 1fr 1fr;
   height: 4rem;
   width: 100%;
+  z-index: 1;
 }
 .navbar__logo {
   display: flex;
