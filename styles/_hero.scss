@@ -3,7 +3,7 @@
 .hero{
     display: grid;
     grid-template-columns: 2fr 3fr;
-    height: 100vw;
+    height: 80rem;
     margin-top: 0rem;
 
     &__black{
@@ -36,6 +36,69 @@
         color: $light-gray
     }
 
+    &__white{
+        position: relative;
+        display: grid;
+        place-items: center;
+        // filter: grayscale(.7);
+        background-position: 30% 60%;
+        &--gradient{
+            place-self: end;
+            height: 5rem;
+            width: 100%;
+            background-color: $dark-gray;
+            background: linear-gradient(0deg, $dark-gray 50%, rgba(0,212,255,0) 100%);
+        }
 
+        &--engineer{
+            animation: 1000ms pageLoad--right ease-out;
+        }
+
+        &--pc{
+            animation: 800ms pageLoad--up ease-in;
+        }
+
+        img{
+            position: absolute;
+            height: 100vh;
+        }
+
+    }
 
 }
+
+@keyframes pageLoad--right {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes pageLoad--up {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    60% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-20px);
+    }
+    70% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-20px);
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

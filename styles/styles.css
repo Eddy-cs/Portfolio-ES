@@ -1,7 +1,7 @@
 .hero {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  height: 100vw;
+  height: 80rem;
   margin-top: 0rem;
 }
 .hero__black {
@@ -16,20 +16,77 @@
   width: 4rem;
   height: 22rem;
   border-radius: 0 0 0 6rem;
-  background-color: #f0f3f6;
+  background-color: #dbd4ca;
 }
 .hero h1 {
   margin-top: 14rem;
-  color: #f0f3f6;
+  color: #dbd4ca;
 }
 .hero h2 {
   color: #5b5c5e;
 }
 .hero p {
   margin-top: 5rem;
-  color: #626364;
+  color: #7e8082;
+}
+.hero__white {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-position: 30% 60%;
+}
+.hero__white--gradient {
+  place-self: end;
+  height: 5rem;
+  width: 100%;
+  background-color: #1a1b1d;
+  background: linear-gradient(0deg, #1a1b1d 50%, rgba(0, 212, 255, 0) 100%);
+}
+.hero__white--engineer {
+  animation: 1000ms pageLoad--right ease-out;
+}
+.hero__white--pc {
+  animation: 800ms pageLoad--up ease-in;
+}
+.hero__white img {
+  position: absolute;
+  height: 100vh;
 }
 
+@keyframes pageLoad--right {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes pageLoad--up {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  60% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  70% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .navbar {
   position: absolute;
   padding: 2.5% 6%;
@@ -45,18 +102,18 @@
 .navbar__logo--image {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #f0f3f6;
+  background-color: #dbd4ca;
   border-radius: 50%;
 }
 .navbar h3 {
-  color: #f0f3f6;
+  color: #dbd4ca;
   place-self: center;
   padding-left: 0;
 }
 .navbar__btn {
   justify-self: end;
   background-color: #1a1b1d;
-  color: #f0f3f6;
+  color: #dbd4ca;
   border-radius: 2rem;
   min-width: 12rem;
   border: none;
@@ -65,6 +122,7 @@
 
 .content {
   background-color: #1a1b1d;
+  padding-top: 5rem;
 }
 .content__main {
   display: grid;
@@ -78,7 +136,7 @@
   border: 2px solid rgb(104, 104, 104);
 }
 .content__info {
-  background-color: #f0f3f6;
+  background-color: #dbd4ca;
   border-radius: 3rem;
   height: 100%;
   width: 100%;
@@ -106,7 +164,8 @@ html {
 }
 
 body {
-  background-color: #f0f3f6;
+  font-family: "Open Sans", sans-serif;
+  background-color: #dbd4ca;
 }
 
 h1 {
@@ -114,9 +173,9 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }/*# sourceMappingURL=styles.css.map */
