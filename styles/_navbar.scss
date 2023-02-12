@@ -13,6 +13,10 @@
     display: flex;
     gap: 1rem;
     &--image {
+      font-size: 1.5rem;
+      //   display: flex;
+      text-align: center;
+      padding-top: 0.5rem;
       width: 3.5rem;
       height: 3.5rem;
       background-color: $bone-white;

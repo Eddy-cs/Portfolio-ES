@@ -69,22 +69,19 @@
 
   &__social {
     margin-top: 4rem;
-    list-style-type: none;
     display: flex;
     grid-auto-flow: column;
-    font-size: 3rem;
-    place-items: start;
+    font-size: 2.8rem;
     gap: 2rem;
 
     li {
-      background-color: $mid-gray;
+      background-color: $orange;
       width: 4rem;
       height: 4rem;
-      border-radius: 5rem;
+      border-radius: 1rem;
       text-align: center;
       color: $dark-gray;
       &:hover {
-        // display: none;
         color: lighten($dark-gray, 10%);
       }
     }
