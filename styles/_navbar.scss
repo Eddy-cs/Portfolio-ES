@@ -31,6 +31,7 @@
   }
 
   &__btn {
+    font-family: inherit;
     justify-self: end;
     background-color: $dark-gray;
     color: $bone-white;
@@ -38,6 +39,7 @@
     min-width: 12rem;
     border: none;
     cursor: pointer;
+    transition: 500ms ease-in-out;
 
     &:hover {
       background-color: lighten($dark-gray, 20%);

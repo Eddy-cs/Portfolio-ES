@@ -131,6 +131,7 @@
   padding-left: 0;
 }
 .navbar__btn {
+  font-family: inherit;
   justify-self: end;
   background-color: #1a1b1d;
   color: #dbd4ca;
@@ -138,40 +139,76 @@
   min-width: 12rem;
   border: none;
   cursor: pointer;
+  transition: 500ms ease-in-out;
 }
 .navbar__btn:hover {
   background-color: #4a4d53;
 }
 
 .content {
-  background-color: #1a1b1d;
-  padding-top: 5rem;
-}
-.content__main {
   display: grid;
-  gap: 3rem;
-  grid-template-columns: 2fr 3.2fr 3.2fr;
-  padding: 1% 6% 5%;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 4rem 7%;
+  background-color: #1a1b1d;
 }
 .content__card {
-  height: 40rem;
-  border-radius: 3rem;
-  border: 2px solid rgb(104, 104, 104);
+  margin-top: 4rem;
+  background-color: rgb(40, 40, 40);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  padding: 3rem;
 }
-.content__info {
-  background-color: #dbd4ca;
-  border-radius: 3rem;
-  height: 100%;
-  width: 100%;
-  padding: 2rem;
-  transform: translate(5%, -5%);
+.content__project {
+  display: grid;
+  margin: 1.5rem 0;
 }
-.content__info:hover {
-  transform: translate(0%, 0%);
-  transition: all 0.5s;
+.content__project--flex {
+  place-self: center;
+  display: flex;
+  gap: 3rem;
 }
-.content__info--tech {
-  font-size: 2rem;
+.content__project--btn {
+  margin: 1rem 0;
+  display: grid;
+  place-items: center;
+  background-color: #1a1b1d;
+  text-transform: uppercase;
+  color: #dbd4ca;
+  border-radius: 1rem;
+  min-width: 12rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 5rem;
+  border: none;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+.content__project--btn:hover {
+  background-color: #4a4d53;
+}
+.content__project img {
+  margin: 2rem 0;
+  max-width: 100%;
+  height: auto;
+}
+.content__project p {
+  margin: 1rem 0;
+}
+.content__project span {
+  color: #385d79;
+}
+.content__project h3 {
+  place-self: center;
+}
+.content h1,
+.content h2,
+.content h3 {
+  color: #dbd4ca;
+}
+.content p {
+  color: #7e8082;
 }
 
 html {
@@ -203,6 +240,10 @@ h2 {
   font-size: 3.5rem;
 }
 
+h3 {
+  font-size: 2.7rem;
+}
+
 p {
   font-size: 1.7rem;
 }
@@ -214,4 +255,11 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: white;
+  opacity: 0.25;
 }/*# sourceMappingURL=styles.css.map */
