@@ -22,14 +22,21 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: $bone-white;
+  overflow-x: hidden;
 }
 
 h1 {
   font-size: 5rem;
+  @media (max-width: 750px) {
+    font-size: 4rem;
+  }
 }
 
 h2 {
   font-size: 3.5rem;
+  @media (max-width: 750px) {
+    font-size: 3rem;
+  }
 }
 
 h3 {

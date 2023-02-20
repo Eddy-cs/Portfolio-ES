@@ -1,12 +1,15 @@
 @import "variables";
 
 .hero {
+  background-color: $dark-gray;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  height: 80rem;
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+  }
 
   h1 {
-    margin-top: 14rem;
     color: $bone-white;
   }
 
@@ -17,45 +20,53 @@
   p {
     margin-top: 5rem;
     color: $light-gray;
+    @media (max-width: 750px) {
+      margin-top: 2rem;
+    }
   }
 
   &__black {
-    background-color: $dark-gray;
+    margin-top: 14rem;
     position: relative;
-    padding: 0 15%;
+    padding: 0 6vw;
+    min-width: 450px;
 
-    &--decoration {
-      position: absolute;
-      right: 0;
-      width: 4rem;
-      height: 22rem;
-      border-radius: 0 0 0 6rem;
-      background-color: $bone-white;
+    @media (max-width: 1200px) {
+      margin-top: 10rem;
+      padding: 0 5vw;
+    }
+
+    @media (max-width: 750px) {
+      padding: 0 5vw;
+      min-width: 0;
     }
   }
 
   &__white {
+    background-color: $bone-white;
+    border-radius: 0 0 0 2rem;
     position: relative;
     display: grid;
     place-items: center;
-    // filter: grayscale(.7);
-    background-position: 30% 60%;
+    @media (max-width: 750px) {
+      height: 20rem;
+      width: 100vw;
+      border-radius: 2rem;
+      top: -10rem;
+      right: -11rem;
+    }
 
     img {
       position: absolute;
-      height: 100vh;
-    }
+      height: 70rem;
 
-    &--gradient {
-      place-self: end;
-      height: 5rem;
-      width: 100%;
-      background-color: $dark-gray;
-      background: linear-gradient(
-        0deg,
-        $dark-gray 50%,
-        rgba(0, 212, 255, 0) 100%
-      );
+      @media (max-width: 1250px) {
+        left: 2vw;
+      }
+      @media (max-width: 750px) {
+        height: 20rem;
+        padding-left: 2rem;
+      }
     }
 
     &--engineer {
@@ -70,9 +81,13 @@
   &__social {
     margin-top: 4rem;
     display: flex;
-    grid-auto-flow: column;
     font-size: 2.8rem;
     gap: 2rem;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+      padding-left: 2rem;
+    }
 
     li {
       background-color: $orange;
