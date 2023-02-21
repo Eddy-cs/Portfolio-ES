@@ -4,9 +4,12 @@
   background-color: $dark-gray;
   display: grid;
   grid-template-columns: 2fr 3fr;
+  margin-bottom: -0.1rem;
+  min-height: 57rem;
 
   @media (max-width: $mobile) {
     grid-template-columns: 1fr;
+    margin-bottom: -7rem;
   }
 
   h1 {

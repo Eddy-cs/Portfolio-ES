@@ -2,10 +2,13 @@
   background-color: #17191c;
   display: grid;
   grid-template-columns: 2fr 3fr;
+  margin-bottom: -0.1rem;
+  min-height: 57rem;
 }
 @media (max-width: 750px) {
   .hero {
     grid-template-columns: 1fr;
+    margin-bottom: -7rem;
   }
 }
 .hero h1 {
@@ -29,7 +32,7 @@
   padding: 0 6vw;
   min-width: 450px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .hero__black {
     margin-top: 10rem;
     padding: 0 5vw;
@@ -61,7 +64,7 @@
   position: absolute;
   height: 70rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .hero__white img {
     left: 2vw;
   }
@@ -295,6 +298,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 *,
@@ -308,6 +312,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #dbd4ca;
+  width: 100vw;
   overflow-x: hidden;
 }
 

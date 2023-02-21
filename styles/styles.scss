@@ -9,6 +9,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 *,
@@ -22,6 +23,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: $bone-white;
+  width: 100vw;
   overflow-x: hidden;
 }
 
