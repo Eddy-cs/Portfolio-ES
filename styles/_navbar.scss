@@ -42,6 +42,10 @@
     cursor: pointer;
     transition: 500ms ease-in-out;
 
+    @media (max-width: $mobile) {
+      background-color: lighten($dark-gray, 20%);
+    }
+
     &:hover {
       background-color: lighten($dark-gray, 20%);
     }

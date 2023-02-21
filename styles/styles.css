@@ -178,6 +178,11 @@
   cursor: pointer;
   transition: 500ms ease-in-out;
 }
+@media (max-width: 750px) {
+  .navbar__btn {
+    background-color: #454b54;
+  }
+}
 .navbar__btn:hover {
   background-color: #454b54;
 }
