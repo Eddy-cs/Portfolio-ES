@@ -157,9 +157,9 @@
   gap: 1rem;
 }
 .navbar__logo--image {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
-  padding-top: 0.5rem;
+  padding-top: 0.6rem;
   width: 3.5rem;
   height: 3.5rem;
   background-color: #dbd4ca;
@@ -219,7 +219,7 @@
   background-color: #1e2124;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 2rem;
-  padding: 6%;
+  padding: 3vw;
 }
 .content__project {
   display: grid;
