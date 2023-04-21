@@ -7,6 +7,7 @@
   margin-bottom: -0.1rem;
   height: 90vh;
   min-height: 57rem;
+  max-height: 70rem;
 
   @media (max-width: $mobile) {
     height: fit-content;
@@ -47,12 +48,17 @@
     }
   }
 
+  &__image {
+    display: grid;
+    place-items: center;
+  }
+
   &__white {
     background-color: $bone-white;
     border-radius: 0 0 0 2rem;
     position: relative;
-    display: grid;
-    place-items: center;
+    // display: grid;
+    // place-items: center;
     @media (max-width: $mobile) {
       height: 20rem;
       width: 100vw;
@@ -62,6 +68,7 @@
     }
 
     img {
+      margin-top: 70rem;
       position: absolute;
       height: 70rem;
 
@@ -69,6 +76,7 @@
         left: 2vw;
       }
       @media (max-width: $mobile) {
+        margin-top: 20rem;
         height: 20rem;
         padding-left: 2rem;
       }

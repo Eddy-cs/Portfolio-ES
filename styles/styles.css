@@ -5,6 +5,7 @@
   margin-bottom: -0.1rem;
   height: 90vh;
   min-height: 57rem;
+  max-height: 70rem;
 }
 @media (max-width: 750px) {
   .hero {
@@ -47,12 +48,14 @@
     min-width: 0;
   }
 }
+.hero__image {
+  display: grid;
+  place-items: center;
+}
 .hero__white {
   background-color: #dbd4ca;
   border-radius: 0 0 0 2rem;
   position: relative;
-  display: grid;
-  place-items: center;
 }
 @media (max-width: 750px) {
   .hero__white {
@@ -64,6 +67,7 @@
   }
 }
 .hero__white img {
+  margin-top: 70rem;
   position: absolute;
   height: 70rem;
 }
@@ -74,6 +78,7 @@
 }
 @media (max-width: 750px) {
   .hero__white img {
+    margin-top: 20rem;
     height: 20rem;
     padding-left: 2rem;
   }
