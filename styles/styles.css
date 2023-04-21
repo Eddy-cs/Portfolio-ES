@@ -84,15 +84,15 @@
   }
 }
 .hero__white--engineer {
-  animation: 1000ms pageLoad--right ease-out;
+  animation: 1000ms pageLoad--right ease-out 700ms;
   pointer-events: none;
 }
 .hero__white--pc {
-  animation: 800ms pageLoad--up ease-in;
+  animation: 800ms pageLoad--up ease-in 700ms;
   pointer-events: none;
 }
 .hero__white--screen {
-  animation: 800ms pageLoad--up ease-in;
+  animation: 800ms pageLoad--up ease-in 700ms;
   transform: translate(0, 0);
   transition: all 0.3s ease-in;
 }

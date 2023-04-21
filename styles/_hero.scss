@@ -57,8 +57,6 @@
     background-color: $bone-white;
     border-radius: 0 0 0 2rem;
     position: relative;
-    // display: grid;
-    // place-items: center;
     @media (max-width: $mobile) {
       height: 20rem;
       width: 100vw;
@@ -83,17 +81,17 @@
     }
 
     &--engineer {
-      animation: 1000ms pageLoad--right ease-out;
+      animation: 1000ms pageLoad--right ease-out 700ms;
       pointer-events: none;
     }
 
     &--pc {
-      animation: 800ms pageLoad--up ease-in;
+      animation: 800ms pageLoad--up ease-in 700ms;
       pointer-events: none;
     }
 
     &--screen {
-      animation: 800ms pageLoad--up ease-in;
+      animation: 800ms pageLoad--up ease-in 700ms;
       transform: translate(0, 0);
       transition: all 0.3s ease-in;
       &:hover {
