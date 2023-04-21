@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     header.style.transition = "opacity 200ms ease-in-out";
     header.style.opacity = 1;
-  }, 500);
+  }, 700);
 });
