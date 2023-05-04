@@ -223,9 +223,9 @@
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .content {
-    padding: 2rem 5%;
+    padding: 10rem 5%;
   }
 }
 .content__card {
@@ -340,6 +340,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #dbd4ca;
   width: 100vw;
+  min-width: 36rem;
   overflow-x: hidden;
 }
 
