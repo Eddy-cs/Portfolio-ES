@@ -26,6 +26,12 @@ body {
   width: 100vw;
   min-width: 36rem;
   overflow-x: hidden;
+  background-color: $dark-gray;
+}
+
+.wrapper {
+  max-width: 160rem;
+  margin: auto;
 }
 
 h1 {

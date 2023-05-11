@@ -166,6 +166,7 @@
   grid-template-columns: 1fr 1fr;
   height: 4rem;
   width: 100%;
+  max-width: 160rem;
   z-index: 1;
 }
 .navbar__logo {
@@ -342,6 +343,12 @@ body {
   width: 100vw;
   min-width: 36rem;
   overflow-x: hidden;
+  background-color: #17191c;
+}
+
+.wrapper {
+  max-width: 160rem;
+  margin: auto;
 }
 
 h1 {
