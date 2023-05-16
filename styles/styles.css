@@ -49,8 +49,9 @@
   }
 }
 .hero__image {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero__white {
   background-color: #dbd4ca;
